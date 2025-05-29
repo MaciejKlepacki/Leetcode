@@ -9,4 +9,4 @@ class Solution:
         for i in range(2, n):
             F[i] = max(F[i-1], F[i-2]+nums[i])
 
-        return F[-1]
+        return F[n-1]
